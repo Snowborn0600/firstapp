@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Log In</title>
+<link rel="stylesheet" type="text/css" href="1.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="p_RtH_icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/4fac38b0eb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>First Project </title>
+    <style>
+       header::before{
+            background: url('bg.jpg') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        }
+        .social-media
+        {
+            list-style: none;
+            padding: 0px;
+            right:0;
+            top:30%;
+            position:fixed;
+        }
+        .social-media li
+        {
+            background:white;
+            padding: 0px;
+            width:100%;
+            margin: 0px;
+        }
+        .social-media li .fa
+        {
+            border-radius: 0px;
+            width: 100%;
+            margin: 0px;
+            color:#fff;
+            font-size:20px;
+        }
+        .social-media li .fa-instagram
+        {
+            background: #d6249f;
+        }
+        .social-media li .fa-linkedin
+        {
+            background: #0e76a8;
+        }
+        .social-media li .fa-pinterest
+        {
+            background: #c8232c;
+        }
+        .left{
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 38px;
+            top: 20px;
+            width: 150px;
+        }
+        .left img
+        {
+            width: 100%;
+        }
+        .mid{
+            display: block;
+            /* border: 2px solid green; */
+            width: 45%;
+            margin: 20px auto;
+        }
+        .right{
+            display: inline-block;
+            /* border: 2px solid yellow; */
+            position: absolute;
+            right: 34px;
+            top: 30px;
+        }
+        .navbar{
+            background-color: black;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover, .navbar li a:active{
+            color:yellow;
+            text-decoration: underline;
+        }
+        .btn{
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 0px 9px;
+            background-color: black;
+            color: white
+        }
+        .btn:hover{
+            background-color: rgb(77, 75, 75);
+            box-shadow: rgb(181, 181, 247) 2px 2px 5px;
+        }
+        .theme-container{
+            box-shadow: white 2px 2px 3px;
+            margin: 106px 80px;
+            padding: 93px 50px;
+            width: 70%;
+            border-radius: 28px;
+            background-color: black;
+            color: white;
+            text-shadow: gray 2px 1px 2px;
+        }  
+        .form-group input{
+            text-align: center;
+            border: 2px solid white;
+            display: block;
+            width: 400px;
+            padding: 9px;
+            border: 2px solid black;
+            margin: 3px auto;
+            font-size: 21px;
+            border-radius: 20px;
+        }
+        .form-group input:hover{
+            border: blue;
+            box-shadow: grey 2px 2px 3px;
+        }
+        .theme-container button{
+            display: block;
+            width: 30%;
+            margin: auto;
+        }
+        .huh{
+            color: red;
+            font-size: 80px;
+            padding-top: 180px;
+            padding-left: 180px;
+            text-shadow: white 2px 2px 2px;
+        }
+        .yeah{
+            color: white;
+            padding-left: 240px;
+            font-size: 30px;
+            text-shadow: red 1px 1px 2px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+         <img src="gym.jpg" alt="">
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-lg-6">
+    <div class="theme-container">
+        <h3>Join the best gym of Delhi now</h3>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Address">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+    </div>
+    <div class="col-lg-5">
+        <h1 class="huh">PERFECTION</h1>
+        <p class="yeah">Take care of your body.</p>
+    </div>
+    <div class="col-lg-1">
+        <ul class="social-media">
+            <li> <i class="fa fa-facebook"></i></li>
+            <li> <i class="fa fa-twitter"></i></li>
+            <li> <i class="fa fa-instagram"></i></li>
+            <li> <i class="fa fa-linkedin"></i></li>
+            <li> <i class="fa fa-pinterest"></i></li>
+        </ul>
+    </div>
+    </div>
+    
+  
+</body>
+</html>
